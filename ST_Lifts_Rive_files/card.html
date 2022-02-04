@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card Component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="glasslifts" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Glass Lifts</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="car" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Car Parking Lifts</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="dumbwaiters" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Dumbwaiters</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="Escalators" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Escalators</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="travelators" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Travelators</div>
+    </div>
+
+
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="acod" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Automatic Center</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="atd" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Automatic Telescopic</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="mtd" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Manual Telescopic</div>
+    </div>
+    <div class="card-container">
+        <div class="assetContainer">
+            <canvas id="msd" width="168" height="144"></canvas>
+        </div>
+        <div class="tsf">Manual swing</div>
+    </div>
+
+    <script src="https://unpkg.com/rive-js"></script>
+    <script>
+        new rive.Rive({
+            src: 'st_lifts_products.riv',
+            artboard:'Escalators',
+            canvas: document.getElementById('Escalators'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_products.riv',
+            artboard:'glasslifts',
+            canvas: document.getElementById('glasslifts'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_products.riv',
+            artboard:'Travelators',
+            canvas: document.getElementById('travelators'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_products.riv',
+            artboard:'Car Parking Lifts',
+            canvas: document.getElementById('car'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_products.riv',
+            artboard:'Dumbwaiters',
+            canvas: document.getElementById('dumbwaiters'),
+            autoplay: true
+        });
+
+        new rive.Rive({
+            src: 'st_lifts_doors.riv',
+            artboard:'automaticCenterOpeningDoors',
+            canvas: document.getElementById('acod'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_doors.riv',
+            artboard:'automaticTelescopicDoors',
+            canvas: document.getElementById('atd'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_doors.riv',
+            artboard:'manualTelescopicDoors',
+            canvas: document.getElementById('mtd'),
+            autoplay: true
+        });
+        new rive.Rive({
+            src: 'st_lifts_doors.riv',
+            artboard:'manualSwingDoors',
+            canvas: document.getElementById('msd'),
+            autoplay: true
+        });
+
+    </script>
+</body>
+</html>
